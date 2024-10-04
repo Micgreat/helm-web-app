@@ -12,7 +12,7 @@ pipeline {
       steps {
         script {
           // Run Helm upgrade or install
-          sh '/usr/local/bin/helm upgrade --install my-webapp ./webapp --namespace default'
+          sh '/usr/local/bin/helm upgrade --install my-webapp ./webapp --namespace default --kubeconfig /home/rhino/.kube/config
         }
       }
     }
