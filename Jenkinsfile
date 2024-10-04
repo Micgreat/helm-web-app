@@ -12,7 +12,7 @@ pipeline {
       steps {
         script {
           // Run Helm upgrade or install
-          sh '/usr/local/bin/helm upgrade --install my-webapp ./helm-web-app --namespace default --kubeconfig /var/lib/jenkins/.kube/config'
+          sh '/usr/local/bin/helm upgrade --install my-webapp /var/lib/jenkins/workspace/helm/helm-web-app --namespace default --kubeconfig /var/lib/jenkins/.kube/config'
         }
       }
     }
