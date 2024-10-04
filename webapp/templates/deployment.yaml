@@ -47,7 +47,7 @@ spec:
               port: http
           resources:
             requests:
-              memory: "180Mi"
+              memory: "181Mi"
               cpu: "120m"
             limits:
               memory: "256Mi"
